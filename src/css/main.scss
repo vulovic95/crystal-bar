@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import "colors"; 
+*{
+	padding: 0px;
+	margin:0px;  
+  font-family: 'Raleway', sans-serif;
+}
+a{
+	text-decoration: none;
+  outline:none;
+}
+li{
+	list-style: none;
+  outline:none;
+}
+.background{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+  background-position:center; 
+}
+.bg-home{ 
+  background-image: url(../img/bar/home.jpg);
+}
+.bg-events{ 
+  background-image: url(../img/bar/events.jpg);
+}
+.bg-contact{ 
+  background-image: url(../img/bar/contact.jpg);
+}
+.bg-cocktails{ 
+  background-image: url(../img/bar/cocktails.jpg);
+}
+.bg-about{ 
+  background-image: url(../img/bar/about.jpg);
+}
+.bg-404{ 
+  background-image: url(../img/bar/404.jpg);
+}
+.black-bg{
+  background: $dark;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+#menu{
+	float: right; 
+  max-width: 500px;
+  display: inline-block;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+#menu-icon{ 
+	float: left;
+  width: 16px;
+  background: gray;
+	padding: 10px 10px;
+	cursor: pointer;
+  margin: 20px;
+}
+.menu-list{
+  display: inline-block;
+  float: right; 
+  background-color:rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+.menu-list > ul > li a{
+  color: #b5b0b0;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 100px 20px 10px;
+  transition: 0.5s all;
+  font-size: 14px;
+  letter-spacing: 1px; 
+}
+.menu-list > ul > li a:hover{
+	color:white;
+}
+.menu-list > span {
+  color: #e5efef;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px; 
+  display: inline-block;
+  background: $lightGreen;
+  display: block;
+  padding-left: 10px;
+  padding: 30px 0px 30px 10px;
+  letter-spacing: 1px; 
+}
+.clear{
+	clear: both;
+} 
+.activeLink{ 
+	color: $lightGreen!important; 
+}
+.holder{
+  max-width:1200px;
+  margin:0 auto;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+.title{ 
+  font-size: 96px;
+  color: white; 
+  align-self: center;    
+  text-transform: capitalize;
+}
+.subtitle{
+  font-size: 15px;
+  letter-spacing: 15px;
+  color: white; 
+  padding: 15px 0px;
+  font-weight: normal; 
+}
+.divider{
+  width: 100px;
+  margin: 0 auto;
+  display: grid;
+  display: -ms-grid;
+  display: inherit;
+}
+body{ 
+  background-color: $lightGray;
+}
+.main{
+  margin-top:36vh;
+  min-height: 100vh;
+}  
+.buttonError{
+  border: none;
+  background: $lighterGreen;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px; 
+  margin: 0px auto;
+  display: grid;
+  cursor: pointer;
+  outline:none; 
+  margin-top:20px;
+  transition: all 1s ease;
+  border-radius: 2px;  
+}
+.buttonError:not([disabled]):hover{ 
+  background: $lightGreen!important;  
+  border:0px;
+}
+.center{
+  text-align: center!important;
+}
+.caps{
+  text-transform: uppercase;
+}
+.small-text{
+  font-size: 12px;
+  color:$grayLetters;
+  padding-top: 15px;
+}
+.main-title{
+  font-size: 30px;
+  font-weight: normal;
+  color:$dark;
+}
+.flex-container{
+  display: -webkit-flex;
+  display: flex; 
+  -webkit-justify-content: space-around;
+  justify-content: space-around; 
+}
+.flex-item{
+  /* max-width: 400px;  */ 
+  margin: 50px 20px 25px 25px;
+  list-style: none;
+  min-width:29%;
+} 
+.center-flex-holder{ 
+  align-self:center;
+}
+.auto-flex-holder{ 
+  align-self:auto;
+}
+.item-about{
+  color: $dark; 
+  margin: 0 auto; 
+  font-size: 15px;
+  text-align: justify;
+  line-height: 25px;
+}  
+.short{ 
+  max-width:500px;
+}
+.item-name{
+  color: $dark;
+  font-size: 18px;
+  margin:25px 0px;
+  text-transform: capitalize;
+}
+.item-pic{
+  max-width: 100px;
+  width: 100%; 
+  margin: 0 auto;
+  display: grid;
+}
+.long-text{
+  margin: 25px 0px;
+  padding: 0px 10px;
+}
+footer{
+  background: #DDD; 
+}
+footer img, #social img{ 
+  padding: 10px;
+  transition: all 0.5s ease;
+  outline:none;
+}
+footer img:hover, #social img:hover {  
+  transform:scale(1.5);
+}
+footer p{
+  margin:10px 0px;
+  text-align: center;
+}
+.event-image{
+  width: 80%;  
+  max-width:250px;
+}
+.flex-event{
+  margin:25px 5px; 
+  min-width: 20%;
+}
+.cocktail-name{ 
+  font-size: 20px;
+  font-weight: normal;
+  color:$dark;     
+  padding: 10px 0px;
+} 
+#contactForm{
+  max-width: 600px;
+  margin:0 auto;
+  padding:5px;
+}
+#contactForm input:not([type="submit"]), #contactForm textarea{
+  display: block;
+  margin: 10px 0px; 
+  padding: 10px 5px; 
+  max-width: 96%;
+  width: 96%;
+  background: #e1e1e1;
+  outline: none;
+  border: none; 
+  color: gray;
+  border-radius: 2px;
+} 
+#contactForm input:not([type="text"]){
+  border: 0px;
+  width: 100px; 
+  margin:10px auto;
+}
+#formResult{ 
+  padding:0px 5px;  
+  line-height: 30px;
+  color:$lightGreen;
+  font-size:14px; 
+  border-radius:2px;  
+}
+details, summary{
+  outline:none; 
+}
+details{
+  margin:10px 0px;
+}
+.normal-item{
+  display: inline-block; 
+  width: 33.33333%;
+}
+.link{
+  color:$lightBlue;
+}
